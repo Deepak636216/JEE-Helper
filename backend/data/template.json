@@ -1,0 +1,123 @@
+{
+  "id": "JEE_2009_MAIN_NL_Q1",
+  "year": 2009,
+  "exam": "JEE Main",
+  "date": "10 April II",
+  "chapter": "Laws of Motion",
+  "topic": "Newton's Laws",
+  "subtopics": ["Work-Energy Theorem", "Resistance Forces", "Kinematics"],
+  "text": "Complete problem statement text here...",
+  "type": "objective_single_correct",
+  "options": [
+    {"id": "a", "text": "Option A text"},
+    {"id": "b", "text": "Option B text"},
+    {"id": "c", "text": "Option C text"},
+    {"id": "d", "text": "Option D text"}
+  ],
+  "correct_answer": "d",
+  "numerical_answer": 0.7,
+  "units": "m/s",
+  "difficulty": "medium",
+  "marks": 4,
+  
+  "given_data": {
+    "mass": {"value": 20, "unit": "g", "symbol": "m"},
+    "initial_speed": {"value": 1, "unit": "m/s", "symbol": "u"},
+    "distance": {"value": 20, "unit": "cm", "symbol": "s"},
+    "force": {"value": 2.5e-2, "unit": "N", "symbol": "F"}
+  },
+  
+  "concepts_required": [
+    "Newton's Second Law",
+    "Equations of Motion (v² = u² + 2as)",
+    "Work-Energy Theorem",
+    "Unit conversion"
+  ],
+  
+  "formulas_used": [
+    "F = ma",
+    "a = F/m",
+    "v² = u² + 2as"
+  ],
+  
+  "ncert_mapping": {
+    "class": 11,
+    "chapter": "Laws of Motion",
+    "chapter_number": 5,
+    "relevant_sections": ["5.6", "5.7"],
+    "ncert_examples": ["Example 5.4", "Example 5.7"]
+  },
+  
+  "official_solution": {
+    "steps": [
+      {
+        "step_number": 1,
+        "description": "Calculate deceleration of bullet",
+        "formula": "a = F/m",
+        "calculation": "a = -2.5×10⁻²/(20×10⁻³) = -5/4 m/s²",
+        "explanation": "Negative sign because resistance opposes motion"
+      },
+      {
+        "step_number": 2,
+        "description": "Apply equation of motion",
+        "formula": "v² = u² + 2as",
+        "calculation": "v² = 1² + 2×(-5/4)×(20×10⁻²)",
+        "explanation": "Convert units: 20 cm = 0.2 m"
+      },
+      {
+        "step_number": 3,
+        "description": "Solve for final velocity",
+        "calculation": "v² = 1 - 1/2 = 1/2",
+        "result": "v = 1/√2 ≈ 0.7 m/s"
+      }
+    ],
+    "answer_justification": "Option (d) is correct"
+  },
+  
+  "common_mistakes": [
+    {
+      "mistake": "Forgetting to convert units",
+      "consequence": "Wrong numerical answer",
+      "correct_approach": "Convert to SI units: 20g → 0.02kg, 20cm → 0.2m"
+    },
+    {
+      "mistake": "Taking acceleration as positive",
+      "consequence": "Gets v² = 1.5 instead of 0.5",
+      "correct_approach": "Resistance opposes motion, so a is negative"
+    }
+  ],
+  
+  "alternative_approaches": [
+    {
+      "method": "Work-Energy Theorem",
+      "explanation": "ΔKE = Work done by resistance",
+      "formula": "½m(v² - u²) = -F×s"
+    }
+  ],
+  
+  "key_insights": [
+    "Unit conversion is critical for correct answer",
+    "Resistance force creates deceleration",
+    "Can solve using either kinematics or energy methods"
+  ],
+  
+  "prerequisite_knowledge": [
+    "Newton's laws of motion",
+    "Equations of motion for uniform acceleration",
+    "SI unit system and conversions"
+  ],
+  
+  "related_problems": ["JEE_2010_ADV_NL_Q3", "JEE_2015_MAIN_NL_Q7"],
+  
+  "tags": ["resistance_force", "deceleration", "unit_conversion", "kinematics"],
+  
+  "has_diagram": false,
+  "diagram_essential": false,
+  
+  "metadata": {
+    "created_at": "2025-01-19T10:30:00Z",
+    "source": "JEE Previous Years",
+    "quality_checked": true,
+    "last_updated": "2025-01-19T10:30:00Z"
+  }
+}
