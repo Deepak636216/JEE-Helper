@@ -44,8 +44,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",
         "http://localhost:5173",
-        "https://*.vercel.app",  # All Vercel deployments
-        "https://jee-helper.vercel.app",  # Update this with your actual Vercel URL
+        "https://jee-helper-one.vercel.app",  # Production Vercel deployment
     ],
     allow_credentials=True,
     allow_methods=["*"],
